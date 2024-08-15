@@ -1,0 +1,11 @@
+{
+  "name": "ee02b55e-3daf-4712-884f-c9c32c9ecfcb",
+  "displayName": "ConfirmCategory",
+  "priority": 500000,
+  "labels": [ {
+    "key": "sys-agent_assist-head",
+    "value": "sys-agent_assist-head"
+  } ],
+  "description": "After analyzing the provided image and based on other gathered details, the chatbot can suggest a product category. This intent is used to confirm if the suggested category aligns with the user's understanding of the product.",
+  "numTrainingPhrases": 3
+}

@@ -1,0 +1,204 @@
+openapi: 3.0.2
+info:
+  version: 1.0.0
+  title: Product Listing Tool
+  description: A tool for creating product listings across multiple marketplaces using Vertex AI.
+  contact:
+    name: Support Team
+    url: https://821pur.buildship.run/multi-modal-api
+    email: support@worksai.org
+
+servers:
+  - url: https://worksai.org, https://make.com, Https://anthropic.com, https://821pur.buildship.run/multi-modal-api
+
+paths:
+  /multi-modal-api:
+    post:
+      summary: Create a new product listing
+      description: Create a product listing across various marketplaces like Amazon, eBay, and more using AI-driven insights.
+      operationId: createListing
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - marketplace
+                - product_name
+                - price
+                - quantity
+                - image_url
+              properties:
+                marketplace:
+                  type: string
+                  enum:
+                    - Amazon
+                    - eBay
+                    - Etsy
+                    - Shopify
+                    - Walmart
+                    - Facebook Marketplace
+                    - Mercari
+                    - Poshmark
+                    - Alibaba
+                  description: The marketplace where the product will be listed.
+                  example: Amazon
+                product_name:
+                  type: string
+                  description: The name of the product.
+                  example: Wireless Bluetooth Headphones
+                description:
+                  type: string
+                  description: Detailed description of the product.
+                  example: "High-quality wireless Bluetooth headphones with noise-cancellation."
+                tags:
+                  type: array
+                  items:
+                    type: string
+                  description: Keywords or tags related to the product.
+                  example: ["wireless", "headphones", "Bluetooth", "electronics"]
+                brand:
+                  type: string
+                  description: The brand of the product.
+                  example: Sony
+                price:
+                  type: number
+                  format: float
+                  description: The price of the product.
+                  example: 49.99
+                quantity:
+                  type: integer
+                  description: The quantity available for sale.
+                  example: 100
+                condition:
+                  type: string
+                  description: The condition of the product.
+                  enum:
+                    - New
+                    - Used
+                    - Refurbished
+                  example: New
+                image_url:
+                  type: string
+                  format: url
+                  description: The URL of the main product image.
+                  example: https://example.com/images/product.jpg
+                additional_images:
+                  type: array
+                  items:
+                    type: string
+                    format: url
+                  description: URLs of additional product images.
+                  example: ["https://example.com/images/product_side.jpg", "https://example.com/images/product_back.jpg"]
+                sku:
+                  type: string
+                  description: The Stock Keeping Unit (SKU) for the product.
+                  example: ABC123456
+
+      responses:
+        '200':
+          description: Successful creation of the product listing.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: The status of the listing creation.
+                    example: success
+                  listing_id:
+                    type: string
+                    description: The unique ID of the created listing.
+                    example: B08K2B5WBX
+                  marketplace:
+                    type: string
+                    description: The marketplace where the product was listed.
+                    example: Amazon
+                  product_name:
+                    type: string
+                    description: The name of the product listed.
+                    example: Wireless Bluetooth Headphones
+                  listing_url:
+                    type: string
+                    format: url
+                    description: The URL of the created product listing.
+                    example: https://www.amazon.com/dp/B08K2B5WBX
+                  price:
+                    type: number
+                    format: float
+                    description: The price of the product listed.
+                    example: 49.99
+                  quantity:
+                    type: integer
+                    description: The quantity of the product listed.
+                    example: 100
+
+        '400':
+          description: Bad request due to invalid input data.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: The status of the request.
+                    example: error
+                  message:
+                    type: string
+                    description: Detailed error message.
+                    example: Invalid marketplace specified.
+
+        '500':
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: The status of the request.
+                    example: error
+                  message:
+                    type: string
+                    description: Detailed error message.
+                    example: An unexpected error occurred while processing your request.
+
+components:
+  schemas:
+    ListingResponse:
+      type: object
+      properties:
+        listing_id:
+          type: string
+          description: The unique identifier for the listing created on the marketplace.
+          example: B08K2B5WBX
+        marketplace:
+          type: string
+          description: The name of the marketplace where the product was listed.
+          example: Amazon
+        product_name:
+          type: string
+          description: The name of the product listed.
+          example: Wireless Bluetooth Headphones
+        listing_url:
+          type: string
+          format: url
+          description: The URL of the created product listing.
+          example: https://www.amazon.com/dp/B08K2B5WBX
+        price:
+          type: number
+          format: float
+          description: The price of the product listed.
+          example: 49.99
+        quantity:
+          type: integer
+          description: The quantity of the product listed.
+          example: 100
+        status:
+          type: string
+          description: The status of the listing creation.
+          example: success

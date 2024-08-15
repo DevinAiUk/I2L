@@ -1,0 +1,81 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hi! How are you doing?", "Hello! How can I help you?", "Good day! What can I do for you today?", "Greetings! How can I assist?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "bf8a0328-481c-4c5a-8e19-fbd0789fd70f"
+  }, {
+    "intent": "ProvideImage",
+    "triggerFulfillment": {
+      "webhook": "Diag_Make_Hook",
+      "tag": "imageUpload, imageUrl",
+      "returnPartialResponses": true
+    },
+    "targetFlow": "Default Start Flow (2024-08-10 16:59:33)",
+    "name": "26116afd-12ff-4e88-8869-d96e3c8cd91f"
+  }, {
+    "intent": "CollectProductDetails",
+    "triggerFulfillment": {
+    
+    },
+    "name": "765c9e72-f1c3-400f-aa5a-46d3997ea6c7"
+  }, {
+    "intent": "SpecifyMarketplace",
+    "triggerFulfillment": {
+    
+    },
+    "name": "239af1bd-fc36-4431-ae58-d9727c4bb6a4"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?", "past image url here" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "imageurl",
+        "value": "imageurl"
+      } ]
+    },
+    "name": "d7f2150a-52ae-4a54-b65d-2b005ef26369"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "b69ef921-7daf-4b76-bb78-ab1d776c2f23"
+  }, {
+    "event": "imageUrl",
+    "triggerFulfillment": {
+      "webhook": "buildship",
+      "tag": "imageUrl",
+      "setParameterActions": [ {
+        "parameter": "imageUrl",
+        "value": "imageUrl"
+      } ],
+      "returnPartialResponses": true
+    },
+    "name": "df120f18-4098-4e22-85f0-f2894a45213b"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  }
+}

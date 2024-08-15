@@ -1,0 +1,21 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Can you suggest some categories?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "No, it belongs in a different category."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Yes, that's the right category."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

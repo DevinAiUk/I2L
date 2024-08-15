@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "$1",
+    "synonyms": [ "$1" ],
+    "languageCode": "en"
+  }, {
+    "value": "$100",
+    "synonyms": [ "$100" ],
+    "languageCode": "en"
+  }, {
+    "value": "$1000",
+    "synonyms": [ "$1000" ],
+    "languageCode": "en"
+  } ]
+}

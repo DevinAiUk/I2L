@@ -1,0 +1,7 @@
+{
+  "name": "ab435cfb-8770-42f6-89b6-62d778287da3",
+  "displayName": "ProvideImage",
+  "priority": 500000,
+  "description": "This intent is triggered when the user provides an image of the product they intend to list. The chatbot can then analyze this image to extract relevant information like product type, condition, or even suggest a suitable category.",
+  "numTrainingPhrases": 3
+}

@@ -1,0 +1,51 @@
+{
+  "entities": [ {
+    "value": "Amazon",
+    "synonyms": [ "Amazon" ],
+    "languageCode": "en"
+  }, {
+    "value": "Ebay",
+    "synonyms": [ "Ebay" ],
+    "languageCode": "en"
+  }, {
+    "value": "Poshmark",
+    "synonyms": [ "Poshmark" ],
+    "languageCode": "en"
+  }, {
+    "value": "Etsy",
+    "synonyms": [ "Etsy" ],
+    "languageCode": "en"
+  }, {
+    "value": "Shopify",
+    "synonyms": [ "Shopify" ],
+    "languageCode": "en"
+  }, {
+    "value": "Walmart",
+    "synonyms": [ "Walmart" ],
+    "languageCode": "en"
+  }, {
+    "value": "Facebook Marketplace",
+    "synonyms": [ "Facebook Marketplace" ],
+    "languageCode": "en"
+  }, {
+    "value": "Mercari",
+    "synonyms": [ "Mercari" ],
+    "languageCode": "en"
+  }, {
+    "value": "Alibaba",
+    "synonyms": [ "Alibaba" ],
+    "languageCode": "en"
+  }, {
+    "value": "Facebook",
+    "synonyms": [ "Facebook" ],
+    "languageCode": "en"
+  }, {
+    "value": "FB",
+    "synonyms": [ "FB" ],
+    "languageCode": "en"
+  }, {
+    "value": "Craigslist",
+    "synonyms": [ "Craigslist" ],
+    "languageCode": "en"
+  } ]
+}

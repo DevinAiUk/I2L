@@ -1,0 +1,14 @@
+{
+  "name": "a67f0c09-bb0f-4fc3-ad4b-9284846bb685",
+  "displayName": "Diag_Make_Hook",
+  "genericWebService": {
+    "uri": "https://hook.us1.make.com/nf4z9p49fi1lo4e9xbbgxswgnqnr6xec",
+    "requestHeaders": [ {
+      "key": "content-type",
+      "value": "application/json"
+    } ]
+  },
+  "timeout": {
+    "seconds": 10
+  }
+}

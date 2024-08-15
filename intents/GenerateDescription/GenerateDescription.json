@@ -1,0 +1,7 @@
+{
+  "name": "596acd2f-da85-4422-8fe7-fae17bad78a5",
+  "displayName": "GenerateDescription",
+  "priority": 500000,
+  "description": "The chatbot can utilize this intent to automatically generate a product description leveraging the collected information. This feature can save users time and effort, especially for detailed descriptions.",
+  "numTrainingPhrases": 3
+}

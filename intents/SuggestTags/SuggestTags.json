@@ -1,0 +1,7 @@
+{
+  "name": "636cb48c-d1d0-456b-b30f-7f30624b1742",
+  "displayName": "SuggestTags",
+  "priority": 500000,
+  "description": "Based on the product information, the chatbot can suggest relevant keywords or tags to enhance the product's visibility and searchability on the target marketplace. This intent allows users to review and approve suggested tags.",
+  "numTrainingPhrases": 3
+}

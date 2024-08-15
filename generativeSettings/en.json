@@ -1,0 +1,56 @@
+{
+  "fallbackSettings": {
+    "selectedPrompt": "PM",
+    "promptTemplates": [ {
+      "displayName": "PM",
+      "promptText": "{\n  \"fulfillmentMessages\": [\n    {\n      \"text\": {\n        \"text\": [\n          \"Your product listing has been successfully created! Here are the details:\"\n        ]\n      }\n    },\n    {\n      \"payload\": {\n        \"richContent\": [\n          [\n            {\n              \"type\": \"info\",\n              \"title\": \"Product Listing Details\",\n              \"subtitle\": \"Here is the summary of your product listing:\",\n              \"content\": [\n                {\n                  \"key\": \"Product Name\",\n                  \"value\": \"Wireless Bluetooth Headphones\"\n                },\n                {\n                  \"key\": \"Marketplace\",\n                  \"value\": \"Amazon\"\n                },\n                {\n                  \"key\": \"Price\",\n                  \"value\": \"$49.99\"\n                },\n                {\n                  \"key\": \"Quantity\",\n                  \"value\": \"100\"\n                },\n                {\n                  \"key\": \"Listing URL\",\n                  \"value\": \"https://www.amazon.com/dp/B08K2B5WBX\"\n                }\n              ]\n            },\n            {\n              \"type\": \"divider\"\n            },\n            {\n              \"type\": \"button\",\n              \"icon\": {\n                \"type\": \"chevron_right\",\n                \"color\": \"#FFFFFF\"\n              },\n              \"text\": \"View Listing\",\n              \"link\": \"https://www.amazon.com/dp/B08K2B5WBX\",\n              \"event\": {\n                \"name\": \"\",\n                \"languageCode\": \"\",\n                \"parameters\": {}\n              }\n            }\n          ]\n        ]\n      }\n    }\n  ]\n}\n"
+    } ]
+  },
+  "generativeSafetySettings": {
+    "raiSettings": {
+      "categoryFilters": [ {
+        "category": "DANGEROUS_CONTENT",
+        "filterLevel": "BLOCK_FEW"
+      }, {
+        "category": "SEXUALLY_EXPLICIT_CONTENT",
+        "filterLevel": "BLOCK_SOME"
+      }, {
+        "category": "HARASSMENT",
+        "filterLevel": "BLOCK_SOME"
+      }, {
+        "category": "HATE_SPEECH",
+        "filterLevel": "BLOCK_SOME"
+      } ]
+    },
+    "defaultRaiSettings": {
+      "categoryFilters": [ {
+        "category": "DANGEROUS_CONTENT",
+        "filterLevel": "BLOCK_FEW"
+      }, {
+        "category": "SEXUALLY_EXPLICIT_CONTENT",
+        "filterLevel": "BLOCK_SOME"
+      }, {
+        "category": "HARASSMENT",
+        "filterLevel": "BLOCK_SOME"
+      }, {
+        "category": "HATE_SPEECH",
+        "filterLevel": "BLOCK_SOME"
+      } ]
+    }
+  },
+  "languageCode": "en",
+  "knowledgeConnectorSettings": {
+    "business": "InstaOnPC",
+    "mainLlmConfig": {
+    
+    }
+  },
+  "llmModelSettings": {
+    "model": "gemini-pro",
+    "parameters": {
+      "temperature": 0.89999998,
+      "inputTokenLimit": "INPUT_TOKEN_LIMIT_SHORT",
+      "outputTokenLimit": "OUTPUT_TOKEN_LIMIT_LONG"
+    }
+  }
+}

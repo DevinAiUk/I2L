@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "electronics",
+    "synonyms": [ "electronics" ],
+    "languageCode": "en"
+  }, {
+    "value": "shoes",
+    "synonyms": [ "shoes" ],
+    "languageCode": "en"
+  }, {
+    "value": "clothing",
+    "synonyms": [ "clothing" ],
+    "languageCode": "en"
+  }, {
+    "value": "furniture",
+    "synonyms": [ "furniture" ],
+    "languageCode": "en"
+  } ]
+}

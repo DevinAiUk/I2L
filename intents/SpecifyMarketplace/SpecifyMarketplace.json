@@ -1,0 +1,7 @@
+{
+  "name": "95741648-c2b7-4b58-bf92-e4337d4e5410",
+  "displayName": "SpecifyMarketplace",
+  "priority": 500000,
+  "description": "This intent helps determine the target marketplace for the product listing. The user can specify their preferred marketplace, and the chatbot will tailor subsequent interactions and data mapping accordingly.",
+  "numTrainingPhrases": 3
+}

@@ -1,0 +1,21 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Let me show you"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\rThis is what it looks like"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "\rHere's a picture of it"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

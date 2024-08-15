@@ -1,0 +1,60 @@
+{
+  "name": "bcaad8bd-16fc-41c0-8168-cc858804dd1b",
+  "displayName": "Listing",
+  "transitionRoutes": [ {
+    "intent": "GenerateDescription",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "$request.generative.description" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "428ec1ba-ed52-4a35-8511-29e053df4af0"
+  }, {
+    "intent": "ConfirmListingDetails",
+    "triggerFulfillment": {
+    
+    },
+    "name": "b4a0d27d-435e-48ec-8edb-4b928f0f3f67"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "66657f9a-431d-4a93-af66-d20f4154ec3b"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "dda8d20d-1793-4c9e-b046-b4b87eb20ebd"
+  }, {
+    "event": "webhook.error.timeout",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry your reust has timed out." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "7d0e1640-e428-4297-b2c9-5195bb460119"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  }
+}

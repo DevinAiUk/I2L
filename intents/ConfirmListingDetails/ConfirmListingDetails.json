@@ -1,0 +1,11 @@
+{
+  "name": "260fc23f-ceac-4b1e-b169-cd363ef38c71",
+  "displayName": "ConfirmListingDetails",
+  "priority": 500000,
+  "labels": [ {
+    "key": "sys-agent_assist-head",
+    "value": "sys-agent_assist-head"
+  } ],
+  "description": "Once the chatbot collects initial product details, it can use this intent to confirm the information with the user before proceeding with listing creation. This step helps ensure accuracy and allows for corrections.",
+  "numTrainingPhrases": 3
+}

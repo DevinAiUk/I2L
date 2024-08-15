@@ -1,0 +1,21 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Please verify my listing."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you confirm the information?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Are the details correct?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

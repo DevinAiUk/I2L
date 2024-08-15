@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "Nike",
+    "synonyms": [ "Nike" ],
+    "languageCode": "en"
+  }, {
+    "value": "Apple",
+    "synonyms": [ "Apple" ],
+    "languageCode": "en"
+  }, {
+    "value": "samsung",
+    "synonyms": [ "samsung" ],
+    "languageCode": "en"
+  } ]
+}

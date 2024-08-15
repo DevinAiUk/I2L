@@ -1,0 +1,20 @@
+{
+  "name": "acfe7ae6-2576-408d-ab50-772f29870ad4",
+  "displayName": "tags",
+  "placeholders": [ {
+    "id": "marketplace",
+    "name": "marketplace"
+  }, {
+    "id": "Tags",
+    "name": "Tags"
+  } ],
+  "modelParameter": {
+    "temperature": 0.5,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-1.5-flash"
+  }
+}

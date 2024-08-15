@@ -1,0 +1,21 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "List on Ebay"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My target marketplace is Etsy."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to sell on Amazon."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

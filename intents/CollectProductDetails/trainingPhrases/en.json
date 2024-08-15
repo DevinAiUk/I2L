@@ -1,0 +1,27 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "I want to list a new product"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'm trying to sell something"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need help creating a new product listing."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Let's get started listing my product"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

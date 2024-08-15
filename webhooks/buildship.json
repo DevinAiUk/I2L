@@ -1,0 +1,25 @@
+{
+  "name": "3dc514a0-cd25-4618-b83d-40fb804e9942",
+  "displayName": "buildship",
+  "genericWebService": {
+    "uri": "https://821pur.buildship.run/multi-modal-api",
+    "requestHeaders": [ {
+      "key": "1723250414321",
+      "value": "api"
+    }, {
+      "key": "content-type",
+      "value": "application/json"
+    } ],
+    "webhookType": "FLEXIBLE",
+    "httpMethod": "POST",
+    "requestBody": "{\n  \"openapi\": \"3.0.2\",\n  \"info\": {\n    \"version\": \"1.0.0\",\n    \"title\": \"InstaOnPC\",\n    \"contact\": {\n      \"url\": \"https://buildship.com\"\n    },\n    \"description\": \"This API has been created using BuildShip.\"\n  },\n  \"servers\": [\n    {\n      \"url\": \"https://821pur.buildship.run\"\n    }\n  ],\n  \"paths\": {\n    \"/multi-modal-api\": {\n      \"post\": {\n        \"x-workflow-id\": \"98O9EDupjrLiK0ym4STG\",\n        \"operationId\": \"post_multi_modal_api\",\n        \"responses\": {\n          \"2XX\": {\n            \"description\": \"\",\n            \"content\": {\n              \"application/json\": {\n                \"schema\": {\n                  \"oneOf\": [\n                    {\n                      \"type\": \"object\",\n                      \"properties\": {}\n                    },\n                    {\n                      \"type\": \"object\",\n                      \"properties\": {}\n                    }\n                  ]\n                }\n              }\n            }\n          }\n        },\n        \"parameters\": [\n          {\n            \"in\": \"header\",\n            \"name\": \"1723250414321\",\n            \"schema\": {\n              \"type\": \"string\",\n              \"title\": \"api\"\n            }\n          },\n          {\n            \"in\": \"header\",\n            \"name\": \"content-type\",\n            \"schema\": {\n              \"type\": \"string\",\n              \"title\": \"application/json\"\n            }\n          }\n        ],\n        \"requestBody\": {\n          \"content\": {\n            \"application/json\": {\n              \"schema\": {\n                \"description\": \"Body of the request\",\n                \"title\": \"Body\",\n                \"type\": \"object\"\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}",
+    "parameterMapping": [ {
+      "key": "requestBody",
+      "value": "body"
+    } ],
+    "serviceAgentAuth": "NONE"
+  },
+  "timeout": {
+    "seconds": 5
+  }
+}

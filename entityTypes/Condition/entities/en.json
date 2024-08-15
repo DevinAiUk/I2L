@@ -1,0 +1,19 @@
+{
+  "entities": [ {
+    "value": "New",
+    "synonyms": [ "New" ],
+    "languageCode": "en"
+  }, {
+    "value": "Used",
+    "synonyms": [ "Used" ],
+    "languageCode": "en"
+  }, {
+    "value": "refurbished",
+    "synonyms": [ "refurbished" ],
+    "languageCode": "en"
+  }, {
+    "value": "As Is",
+    "synonyms": [ "As Is" ],
+    "languageCode": "en"
+  } ]
+}

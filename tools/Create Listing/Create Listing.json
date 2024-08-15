@@ -1,0 +1,19 @@
+{
+  "name": "ff7271ac-3f21-4b09-a37d-794f924687b4",
+  "displayName": "Create Listing",
+  "description": "create listing",
+  "openApiSpec": {
+    "authentication": {
+      "apiKeyConfig": {
+        "keyName": "1723250414321",
+        "apiKey": "api",
+        "requestLocation": "HEADER"
+      }
+    }
+  },
+  "sharedSchemas": [ {
+    "name": "ListingResponse",
+    "schema": "{\n  \"type\" : \"object\",\n  \"properties\" : {\n    \"listing_id\" : {\n      \"type\" : \"string\",\n      \"description\" : \"The unique identifier for the listing created on the marketplace.\",\n      \"example\" : \"B08K2B5WBX\"\n    },\n    \"marketplace\" : {\n      \"type\" : \"string\",\n      \"description\" : \"The name of the marketplace where the product was listed.\",\n      \"example\" : \"Amazon\"\n    },\n    \"product_name\" : {\n      \"type\" : \"string\",\n      \"description\" : \"The name of the product listed.\",\n      \"example\" : \"Wireless Bluetooth Headphones\"\n    },\n    \"listing_url\" : {\n      \"type\" : \"string\",\n      \"description\" : \"The URL of the created product listing.\",\n      \"format\" : \"url\",\n      \"example\" : \"https://www.amazon.com/dp/B08K2B5WBX\"\n    },\n    \"price\" : {\n      \"type\" : \"number\",\n      \"description\" : \"The price of the product listed.\",\n      \"format\" : \"float\",\n      \"example\" : 49.99\n    },\n    \"quantity\" : {\n      \"type\" : \"integer\",\n      \"description\" : \"The quantity of the product listed.\",\n      \"example\" : 100\n    },\n    \"status\" : {\n      \"type\" : \"string\",\n      \"description\" : \"The status of the listing creation.\",\n      \"example\" : \"success\"\n    }\n  }\n}"
+  } ],
+  "toolType": "CUSTOMIZED_TOOL"
+}

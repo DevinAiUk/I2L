@@ -1,0 +1,21 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "I need more detailsWhat else do you need to know?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need more details"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you tell me more?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

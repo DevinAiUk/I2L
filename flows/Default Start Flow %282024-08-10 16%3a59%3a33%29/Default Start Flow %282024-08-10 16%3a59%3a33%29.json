@@ -1,0 +1,163 @@
+{
+  "name": "bff0e947-c0bc-40ae-9eb1-e6111585e085",
+  "displayName": "Default Start Flow (2024-08-10 16:59:33)",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "ConfirmCategory",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Listing",
+    "name": "347b6f15-c159-46a9-81bb-4717354ca711"
+  }, {
+    "intent": "GenerateDescription",
+    "condition": "$intent.params = Description",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Your Listing Details Provided The Image" ]
+        },
+        "languageCode": "en"
+      } ],
+      "generators": [ {
+        "generator": "projects/works-ai-5yfnug/locations/global/agents/919d6acc-dbc8-48f3-8a8e-3dde3e4170e7/generators/8e3a3110-835d-4149-9ff3-24082f8e1753",
+        "inputParameters": [ {
+          "key": "Additional",
+          "value": "Additional Info"
+        }, {
+          "key": "Brand",
+          "value": "Brand"
+        }, {
+          "key": "Condition",
+          "value": "Condition"
+        }, {
+          "key": "ImageUrl",
+          "value": "imageupload"
+        }, {
+          "key": "Marketplace",
+          "value": "MarketPlace"
+        }, {
+          "key": "Output",
+          "value": "Results"
+        }, {
+          "key": "Price",
+          "value": "Price"
+        }, {
+          "key": "Product",
+          "value": "Product"
+        }, {
+          "key": "Quantity",
+          "value": "1 Unit"
+        }, {
+          "key": "Title",
+          "value": "Title"
+        }, {
+          "key": "imageUrl",
+          "value": "imageurl"
+        } ],
+        "outputParameter": "$request.generative.listing"
+      } ]
+    },
+    "name": "d9cb283f-1f1d-4d40-86f3-60057336f726"
+  }, {
+    "intent": "SuggestTags",
+    "condition": "Tags = Tags",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Here's your tags" ]
+        },
+        "languageCode": "en"
+      } ],
+      "generators": [ {
+        "generator": "projects/works-ai-5yfnug/locations/global/agents/919d6acc-dbc8-48f3-8a8e-3dde3e4170e7/generators/acfe7ae6-2576-408d-ab50-772f29870ad4",
+        "inputParameters": [ {
+          "key": "Tags",
+          "value": "tags"
+        }, {
+          "key": "marketplace",
+          "value": "marketplace"
+        } ],
+        "outputParameter": "$request.generative.tags"
+      } ]
+    },
+    "name": "2f04b320-01b7-4da2-bb5c-942895faf154"
+  }, {
+    "intent": "ConfirmListingDetails",
+    "triggerFulfillment": {
+    
+    },
+    "name": "e65ca533-b402-4aed-86e4-c08ad6c84b2a"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "d7f2150a-52ae-4a54-b65d-2b005ef26369"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "b69ef921-7daf-4b76-bb78-ab1d776c2f23"
+  }, {
+    "event": "imageUrl",
+    "triggerFulfillment": {
+      "webhook": "buildship",
+      "tag": "imageUrl",
+      "setParameterActions": [ {
+        "parameter": "imageUrl",
+        "value": "imageUrl"
+      } ],
+      "returnPartialResponses": true
+    },
+    "name": "df120f18-4098-4e22-85f0-f2894a45213b"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  },
+  "knowledgeConnectorSettings": {
+    "enabled": true,
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "$request.knowledge.answers[0]" ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "imageUrl",
+        "value": "ImageUrl"
+      } ]
+    },
+    "dataStoreConnections": [ {
+      "dataStoreType": "PUBLIC_WEB",
+      "dataStore": "projects/21902121526/locations/global/collections/default_collection/dataStores/iop_1722388208368",
+      "languageCode": "en",
+      "documentProcessingMode": "DOCUMENTS",
+      "aclConfig": {
+      
+      }
+    }, {
+      "dataStoreType": "UNSTRUCTURED",
+      "dataStore": "projects/21902121526/locations/global/collections/default_collection/dataStores/ioptraining_1722389025913",
+      "languageCode": "en",
+      "documentProcessingMode": "DOCUMENTS",
+      "aclConfig": {
+      
+      }
+    } ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "541aa9dc-5e68-4665-9ed6-4dc8110c51f8",
+  "displayName": "RequestClarification",
+  "priority": 500000,
+  "description": " If the chatbot needs additional information from the user to create a complete and accurate listing, it can use this intent to request clarification. For example, it could ask for missing details like product dimensions or material.",
+  "numTrainingPhrases": 3
+}

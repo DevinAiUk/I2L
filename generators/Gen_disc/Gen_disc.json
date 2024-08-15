@@ -1,0 +1,47 @@
+{
+  "name": "8e3a3110-835d-4149-9ff3-24082f8e1753",
+  "displayName": "Gen_disc",
+  "placeholders": [ {
+    "id": "imageUrl",
+    "name": "imageUrl"
+  }, {
+    "id": "Marketplace",
+    "name": "Marketplace"
+  }, {
+    "id": "Additional",
+    "name": "Additional"
+  }, {
+    "id": "Output",
+    "name": "Output"
+  }, {
+    "id": "Title",
+    "name": "Title"
+  }, {
+    "id": "Product",
+    "name": "Product"
+  }, {
+    "id": "Brand",
+    "name": "Brand"
+  }, {
+    "id": "Price",
+    "name": "Price"
+  }, {
+    "id": "Quantity",
+    "name": "Quantity"
+  }, {
+    "id": "Condition",
+    "name": "Condition"
+  }, {
+    "id": "ImageUrl",
+    "name": "ImageUrl"
+  } ],
+  "modelParameter": {
+    "temperature": 0.5,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-1.5-flash"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "cb2b6ea4-551d-4967-9e0e-4a3b3dbdac42",
+  "displayName": "CollectProductDetails",
+  "priority": 500000,
+  "labels": [ {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "This intent is triggered when the user wants to initiate the process of listing a product. It's used to collect essential product information like product type, brand, condition, price, quantity, and the intended marketplace for listing",
+  "numTrainingPhrases": 4
+}

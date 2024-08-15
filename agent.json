@@ -1,0 +1,106 @@
+{
+  "defaultLanguageCode": "en",
+  "timeZone": "America/New_York",
+  "enableLogging": true,
+  "projectNumber": 21902121526,
+  "speechToTextSettings": {
+  
+  },
+  "enableStackdriverLogging": true,
+  "enableSpellCorrection": true,
+  "advancedSettings": {
+    "audioExportGcsDestination": {
+    
+    },
+    "speechSettings": {
+      "endpointerSensitivity": 90,
+      "noSpeechTimeout": {
+        "seconds": 5
+      }
+    },
+    "playbackInterruptionSettings": {
+    
+    },
+    "loggingSettings": {
+      "enableStackdriverLogging": true,
+      "enableInteractionLogging": true
+    }
+  },
+  "speakerIdSettings": {
+  
+  },
+  "customPayloadTemplates": [ {
+    "displayName": "payloadinfo",
+    "payload": {
+      "fulfillmentMessages": [ {
+        "text": {
+          "text": [ "Your product listing has been successfully created! Here are the details:" ]
+        }
+      }, {
+        "payload": {
+          "richContent": [ [ {
+            "content": [ {
+              "key": "Product Name",
+              "value": "Wireless Bluetooth Headphones"
+            }, {
+              "key": "Marketplace",
+              "value": "Amazon"
+            }, {
+              "key": "Price",
+              "value": "$49.99"
+            }, {
+              "key": "Quantity",
+              "value": "100"
+            }, {
+              "key": "Listing URL",
+              "value": "https://www.amazon.com/dp/B08K2B5WBX"
+            } ],
+            "subtitle": "Here is the summary of your product listing:",
+            "title": "Product Listing Details",
+            "type": "info"
+          }, {
+            "type": "divider"
+          }, {
+            "event": {
+              "languageCode": "",
+              "name": "",
+              "parameters": {
+              
+              }
+            },
+            "icon": {
+              "color": "#FFFFFF",
+              "type": "chevron_right"
+            },
+            "link": "https://www.amazon.com/dp/B08K2B5WBX",
+            "text": "View Listing",
+            "type": "button"
+          } ] ]
+        }
+      } ]
+    }
+  } ],
+  "textToSpeechSettings": {
+  
+  },
+  "genAppBuilderSettings": {
+    "engine": "projects/21902121526/locations/global/collections/default_collection/engines/919d6acc-dbc8-48f3-8a8e-3dde3e4170e7"
+  },
+  "duplexSettings": {
+  
+  },
+  "callCompanionSettings": {
+    "company": "Image To Listing Bot"
+  },
+  "answerFeedbackSettings": {
+    "enableAnswerFeedback": true
+  },
+  "startPlaybook": "i2l",
+  "webClientSettings": {
+    "displayName": "Image To Listing Bot",
+    "logoUri": "gs://works-ai-5yfnug.appspot.com",
+    "font": "Google Sans",
+    "textColor": "#2A56C6",
+    "boxBorderRadius": "0"
+  }
+}

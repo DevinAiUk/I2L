@@ -1,0 +1,54 @@
+{
+  "name": "1946d1c5-613c-4702-873a-8bf433995411",
+  "actions": [ {
+    "userUtterance": {
+    
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Hi there! I'm here to help you create product listings on various marketplaces. Let's get started. Could you please provide your email address, the name of the product you want to list, and the marketplace where you want to create the listing?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "yes. text@gmail.com, autographed beetles music cd, ebay"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Great! I've received your email address and the product details. Now, let's move on to image analysis. Please upload an image of the autographed Beatles music CD you want to list on eBay. You can either provide a URL or upload the image directly here."
+    }
+  }, {
+    "toolUse": {
+      "tool": "projects/works-ai-5yfnug/locations/global/agents/919d6acc-dbc8-48f3-8a8e-3dde3e4170e7/tools/df-code-interpreter-tool",
+      "action": "generate_and_execute",
+      "inputActionParameters": {
+        "files": [ {
+          "contents": "fieldname",
+          "name": "imageUpload",
+          "tool_code": "buildship"
+        } ]
+      },
+      "outputActionParameters": {
+        "200": {
+          "tool_code": "buildship",
+          "tool_input": {
+            "destination": "/path/to/uploads",
+            "encoding": "7bit",
+            "fieldname": "imageUpload",
+            "filename": "unique_filename.jpg",
+            "mimetype": "image/jpeg",
+            "originalname": "example_image.jpg",
+            "path": "/path/to/uploads/unique_filename.jpg",
+            "size": 12345
+          }
+        }
+      }
+    }
+  } ],
+  "playbookOutput": {
+    "executionSummary": "Mapping Entities to Marketplace Fields\n\nMap the extracted entities from the agent response to the corresponding fields in the respective marketplace listings. Use the following guidelines:\n\n\nMarketplace:\n\nAmazon: Map \"Product Type\" to \"Product Title\" and \"Product Category.\"\neBay: Map \"Product Type\" to \"Item Title\" and \"Item Category.\"\nEtsy, Shopify, Walmart, Facebook Marketplace, Mercari, Poshmark: Map \"Product Type\" to the appropriate \"Category\" field.\nAlibaba: Map \"Product Type\" to \"Category.\"\nCondition: Include the condition of the item. This field is optional for Amazon and eBay but may be relevant for other marketplaces.\n\nBrand: Map the brand of the product. This field is optional for eBay but essential for Amazon and most other marketplaces.\n\nPrice: Ensure you map the price correctly to the respective field for all marketplaces.\n\nQuantity: Map the quantity or inventory amount accurately. This field is labeled \"Quantity\" for most marketplaces, \"Inventory Quantity\" for Shopify, and is optional for Facebook Marketplace.\n\nImage URL: Provide the URL for the main image. This is commonly labeled \"Main Image URL\" across different marketplaces.\n\nAdditional Fields: Depending on the marketplace, you may need to map other entities, such as product description, SKU, shipping information, or specific attributes like color, size, or material. Refer to each marketplace's listing requirements.\n\n\nYour task is to create a mapping logic that takes the agent response as input and returns the structured listing data, ensuring that the entities are correctly mapped to the corresponding fields for each marketplace. This prompt ensures that the agent accurately maps the extracted information to the appropriate fields, facilitating seamless and consistent listings across different e-commerce platforms."
+  },
+  "displayName": "buildship_gen_ai",
+  "retrievalStrategy": "DEFAULT",
+  "conversationState": "OUTPUT_STATE_ESCALATED",
+  "languageCode": "undetected"
+}

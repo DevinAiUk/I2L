@@ -1,0 +1,43 @@
+openapi: 3.0.2
+info:
+  version: 1.0.0
+  title: InstaOnPC
+  contact:
+    url: https://buildship.com
+  description: This API has been created using BuildShip.
+servers:
+  - url: https://821pur.buildship.run
+paths:
+  /multi-modal-api:
+    post:
+      x-workflow-id: 98O9EDupjrLiK0ym4STG
+      operationId: post_multi_modal_api
+      responses:
+        2XX:
+          description: ""
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - type: object
+                    properties: {}
+                  - type: object
+                    properties: {}
+      parameters:
+        - in: header
+          name: "1723250414321"
+          schema:
+            type: string
+            title: api
+        - in: header
+          name: content-type
+          schema:
+            type: string
+            title: application/json
+      requestBody:
+        content:
+          application/json:
+            schema:
+              description: Body of the request
+              title: Body
+              type: object

@@ -1,0 +1,7 @@
+{
+  "name": "724598f7-52e4-4135-a449-c27ffad25723",
+  "displayName": "PreviewListing",
+  "priority": 500000,
+  "description": "Before submitting the listing to the chosen marketplace, the chatbot can present a preview to the user using this intent. This step allows users to review the final listing details and request any necessary modifications.",
+  "numTrainingPhrases": 3
+}
