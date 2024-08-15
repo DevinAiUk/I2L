@@ -146,18 +146,12 @@
       "dataStoreType": "PUBLIC_WEB",
       "dataStore": "projects/21902121526/locations/global/collections/default_collection/dataStores/iop_1722388208368",
       "languageCode": "en",
-      "documentProcessingMode": "DOCUMENTS",
-      "aclConfig": {
-      
-      }
+      "documentProcessingMode": "DOCUMENTS"
     }, {
       "dataStoreType": "UNSTRUCTURED",
       "dataStore": "projects/21902121526/locations/global/collections/default_collection/dataStores/ioptraining_1722389025913",
       "languageCode": "en",
-      "documentProcessingMode": "DOCUMENTS",
-      "aclConfig": {
-      
-      }
+      "documentProcessingMode": "DOCUMENTS"
     } ]
   }
 }
