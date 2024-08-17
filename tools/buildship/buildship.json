@@ -7,7 +7,7 @@
       "apiKeyConfig": {
         "keyName": "1723250414321",
         "apiKey": "api",
-        "requestLocation": "HEADER"
+        "requestLocation": "QUERY_STRING"
       }
     }
   },

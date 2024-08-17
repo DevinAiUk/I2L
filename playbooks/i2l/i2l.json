@@ -25,6 +25,8 @@
   }, {
     "text": "Example: \"Please upload an image of the product you want to list. You can either provide a URL or upload the image directly here.\""
   }, {
+    "text": "User: inserts image url. ${TOOL:252d0a36-9d7d-44d7-b963-7b3f3a21210e}"
+  }, {
     "text": "Analyze the Image:"
   }, {
     "text": "Once the image is uploaded, trigger the image analysis process."
@@ -54,6 +56,8 @@
     "text": "Example: \"Could you please specify the price and quantity for this product? Also, if you have any additional images or product details, you can provide them now.\""
   }, {
     "text": "4. Create the Listing"
+  }, {
+    "text": "${TOOL:ff7271ac-3f21-4b09-a37d-794f924687b4}"
   }, {
     "text": "Submit the Listing:"
   }, {
@@ -120,6 +124,8 @@
     }, {
       "text": "Example: \"Please upload an image of the product you want to list. You can either provide a URL or upload the image directly here.\""
     }, {
+      "text": "User: inserts image url. ${TOOL:252d0a36-9d7d-44d7-b963-7b3f3a21210e}"
+    }, {
       "text": "Analyze the Image:"
     }, {
       "text": "Once the image is uploaded, trigger the image analysis process."
@@ -149,6 +155,8 @@
       "text": "Example: \"Could you please specify the price and quantity for this product? Also, if you have any additional images or product details, you can provide them now.\""
     }, {
       "text": "4. Create the Listing"
+    }, {
+      "text": "${TOOL:ff7271ac-3f21-4b09-a37d-794f924687b4}"
     }, {
       "text": "Submit the Listing:"
     }, {
