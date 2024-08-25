@@ -99,7 +99,7 @@
   }, {
     "text": "By following these instructions, the I2L chatbot will effectively guide users through the process of creating product listings, utilizing AI-powered image analysis to automate much of the work and providing a seamless experience across multiple marketplaces."
   } ],
-  "referencedTools": [ "projects/works-ai-5yfnug/locations/global/agents/919d6acc-dbc8-48f3-8a8e-3dde3e4170e7/tools/252d0a36-9d7d-44d7-b963-7b3f3a21210e", "projects/works-ai-5yfnug/locations/global/agents/919d6acc-dbc8-48f3-8a8e-3dde3e4170e7/tools/ff7271ac-3f21-4b09-a37d-794f924687b4", "projects/works-ai-5yfnug/locations/global/agents/919d6acc-dbc8-48f3-8a8e-3dde3e4170e7/tools/df-code-interpreter-tool" ],
+  "referencedTools": [ "projects/works-ai-5yfnug/locations/global/agents/919d6acc-dbc8-48f3-8a8e-3dde3e4170e7/tools/252d0a36-9d7d-44d7-b963-7b3f3a21210e", "projects/works-ai-5yfnug/locations/global/agents/919d6acc-dbc8-48f3-8a8e-3dde3e4170e7/tools/cc4fbd75-0d02-4eeb-b5ed-a5439ef6d865", "projects/works-ai-5yfnug/locations/global/agents/919d6acc-dbc8-48f3-8a8e-3dde3e4170e7/tools/ff7271ac-3f21-4b09-a37d-794f924687b4", "projects/works-ai-5yfnug/locations/global/agents/919d6acc-dbc8-48f3-8a8e-3dde3e4170e7/tools/df-code-interpreter-tool" ],
   "instruction": {
     "steps": [ {
       "text": "Greeting and User Interaction"
