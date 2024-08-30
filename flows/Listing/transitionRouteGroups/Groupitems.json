@@ -1,0 +1,56 @@
+{
+  "name": "372722c0-b1b2-42de-bd9c-9cb90bff9d54",
+  "displayName": "Groupitems",
+  "transitionRoutes": [ {
+    "intent": "CollectProductDetails",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I just need to collect some minor details about the item." ]
+        },
+        "languageCode": "en"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "0645e0a8-74f6-41da-8284-be8e267490f6"
+  }, {
+    "intent": "ConfirmCategory",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Just confirming the category" ]
+        },
+        "languageCode": "en"
+      } ],
+      "generators": [ {
+        "generator": "projects/works-ai-5yfnug/locations/global/agents/919d6acc-dbc8-48f3-8a8e-3dde3e4170e7/generators/605f966a-ea64-422a-b0cf-d12f2ba97767",
+        "outputParameter": "$request.generative."
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "3fa5a73f-30b8-44c8-991b-2a26de9f2f7b"
+  }, {
+    "intent": "SuggestTags",
+    "triggerFulfillment": {
+      "generators": [ {
+        "generator": "projects/works-ai-5yfnug/locations/global/agents/919d6acc-dbc8-48f3-8a8e-3dde3e4170e7/generators/acfe7ae6-2576-408d-ab50-772f29870ad4",
+        "inputParameters": [ {
+          "key": "Tags",
+          "value": "$tags"
+        }, {
+          "key": "marketplace",
+          "value": "$marketplace"
+        } ],
+        "outputParameter": "$request.generative.tags"
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "fd999d85-32ef-48be-a049-4ab25500aa39"
+  } ]
+}

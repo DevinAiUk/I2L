@@ -62,6 +62,7 @@
     },
     "name": "b69ef921-7daf-4b76-bb78-ab1d776c2f23"
   }, {
+    "targetFlow": "Default Start Flow (2024-08-10 16:59:33)",
     "event": "imageUrl",
     "triggerFulfillment": {
       "webhook": "buildship",
@@ -70,12 +71,22 @@
         "parameter": "imageUrl",
         "value": "imageUrl"
       } ],
-      "returnPartialResponses": true
+      "nextActionOverride": {
+      
+      }
     },
     "name": "df120f18-4098-4e22-85f0-f2894a45213b"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",
-    "classificationThreshold": 0.30000001
-  }
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC"
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.5,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+    "customConfigKey": "23487313-6061-44b7-93a4-e162a72fa942",
+    "languageCode": "en"
+  } ]
 }

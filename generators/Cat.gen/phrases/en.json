@@ -1,0 +1,6 @@
+{
+  "promptTexts": [ {
+    "text": "from what the consumer provided generate a category to place the item in which they're trying to sell, on the entity type, (marketplace, eg. ebay, amazon, etc..)",
+    "languageCode": "en"
+  } ]
+}

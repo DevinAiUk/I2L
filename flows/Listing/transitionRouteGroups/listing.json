@@ -1,0 +1,52 @@
+{
+  "name": "18d323d4-b5f0-4819-bfcc-9881ab337a36",
+  "displayName": "listing",
+  "transitionRoutes": [ {
+    "intent": "GenerateDescription",
+    "triggerFulfillment": {
+      "generators": [ {
+        "generator": "projects/works-ai-5yfnug/locations/global/agents/919d6acc-dbc8-48f3-8a8e-3dde3e4170e7/generators/8e3a3110-835d-4149-9ff3-24082f8e1753",
+        "inputParameters": [ {
+          "key": "Additional",
+          "value": "$additional"
+        }, {
+          "key": "Brand",
+          "value": "$brand"
+        }, {
+          "key": "Condition",
+          "value": "$condition"
+        }, {
+          "key": "ImageUrl",
+          "value": "[url]"
+        }, {
+          "key": "Marketplace",
+          "value": "$marketplace"
+        }, {
+          "key": "Output",
+          "value": "$generate.output"
+        }, {
+          "key": "Price",
+          "value": "$price"
+        }, {
+          "key": "Product",
+          "value": "$product"
+        }, {
+          "key": "Quantity",
+          "value": "$quantity"
+        }, {
+          "key": "Title",
+          "value": "$title"
+        }, {
+          "key": "imageUrl",
+          "value": "imageUrl"
+        } ],
+        "outputParameter": "$request.generative."
+      } ],
+      "nextActionOverride": {
+      
+      }
+    },
+    "name": "0763451a-4d6b-45e8-96e9-b92319cb2c8b",
+    "description": "this will generate the description of the upload image and iformation captured in default start flow."
+  } ]
+}

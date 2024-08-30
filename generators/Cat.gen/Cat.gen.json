@@ -1,0 +1,13 @@
+{
+  "name": "605f966a-ea64-422a-b0cf-d12f2ba97767",
+  "displayName": "Cat.gen",
+  "modelParameter": {
+    "temperature": 0.5,
+    "maxDecodeSteps": 128,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-1.5-flash"
+  }
+}

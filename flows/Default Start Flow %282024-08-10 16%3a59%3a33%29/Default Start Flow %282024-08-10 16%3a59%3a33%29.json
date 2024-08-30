@@ -158,6 +158,21 @@
       "aclConfig": {
       
       }
+    }, {
+      "dataStoreType": "STRUCTURED",
+      "dataStore": "projects/21902121526/locations/global/collections/default_collection/dataStores/instaonpc-faq_1722556204043",
+      "languageCode": "en",
+      "documentProcessingMode": "DOCUMENTS",
+      "structuredDataStoreSubtype": "FAQ",
+      "aclConfig": {
+      
+      }
     } ]
-  }
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "customConfigKey": "23487313-6061-44b7-93a4-e162a72fa942",
+    "languageCode": "en"
+  } ]
 }

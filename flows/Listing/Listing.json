@@ -56,5 +56,12 @@
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001
-  }
+  },
+  "transitionRouteGroups": [ "Groupitems", "listing" ],
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "customConfigKey": "887bee06-581c-4241-882b-b38c17ad1110",
+    "languageCode": "en"
+  } ]
 }
